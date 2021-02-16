@@ -30,13 +30,11 @@ export class RoomComponent implements OnInit{
   }
   
   addPeopleToRoom() {
-   
+   if(this.memberName,this.roomId) {
     console.log(this.roomId)
     this.webex.addPeopleToRoom(this.memberName,this.roomId)
-    
-    
-    
-    }
+   }
+  }
   
   sendmsgToRoom() {
     if(this.textMessage,this.roomId) {
